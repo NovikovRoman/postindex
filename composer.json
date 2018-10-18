@@ -5,7 +5,9 @@
   "require": {
     "php": ">=7.1",
     "guzzlehttp/guzzle": "^6.3",
-    "hisamu/php-xbase": "^1.0"
+    "hisamu/php-xbase": "^1.0",
+    "ext-zip": "*",
+    "ext-mbstring": "*"
   },
   "license": "MIT",
   "authors": [
