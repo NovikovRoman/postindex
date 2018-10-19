@@ -17,6 +17,7 @@ class PostIndex
     private $lastModified;
     private $httpClient;
     private $pathDir;
+    /** @var \DateTime */
     private $lastModifiedOnWebsite;
     /**
      * @var array
@@ -91,7 +92,7 @@ class PostIndex
     }
 
     /**
-     * @return mixed
+     * @return \DateTime
      * @throws PostIndexException
      */
     public function lastModifiedOnWebsite()
