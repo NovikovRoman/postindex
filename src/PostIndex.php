@@ -79,7 +79,7 @@ class PostIndex
         if (empty($this->httpClient)) {
             $this->httpClient = new Client();
         }
-        $response = $this->httpClient->head(self::URL);
+        $response = $this->httpClient->head(self::URL . self::FILENAME);
         $lastModified = $response->getHeader('Last-Modified');
         if (empty($lastModified)) {
             throw new PostIndexException('not connected');
