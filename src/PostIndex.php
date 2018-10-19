@@ -12,6 +12,7 @@ class PostIndex
     const FILENAME_DBF = 'post-index.dbf';
     const FILENAME_CSV = 'post-index.csv';
     const DIR_MODE = 0700;
+    const CSV_DELIMITER = ';';
     /** @var \DateTime */
     private $lastModified;
     private $httpClient;
@@ -108,7 +109,7 @@ class PostIndex
      * @throws PostIndexException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
-    public function refresh($csvDelimiter = ';', $cp1251 = false)
+    public function refresh($csvDelimiter = self::CSV_DELIMITER, $cp1251 = false)
     {
         $this->download()
             ->unzip();
