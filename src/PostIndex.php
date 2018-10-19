@@ -70,7 +70,7 @@ class PostIndex
 
     /**
      * @return bool
-     * @throws \Exception
+     * @throws PostIndexException
      */
     public function hasNewVersion()
     {
@@ -91,7 +91,7 @@ class PostIndex
 
     /**
      * @return mixed
-     * @throws \Exception
+     * @throws PostIndexException
      */
     public function lastModifiedOnWebsite()
     {
